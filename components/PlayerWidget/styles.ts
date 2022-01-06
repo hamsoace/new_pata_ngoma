@@ -12,6 +12,14 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         alignItems: 'center',
     },
+    progress:{
+        height: 3,
+        width: '100%',
+        backgroundColor: '#bcbcbc',
+    },
+    row:{
+        flexDirection: 'row',
+    },
     image: {
         width: 70,
         height: 70,

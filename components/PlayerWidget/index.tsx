@@ -69,10 +69,12 @@ const PlayerWidget = () => {
 
     return (
         <View style={styles.container}>
+            <View style ={styles.progress}/>
+            <View style={styles.row}>
             <Image source={{ uri: song.imageUri }} style={styles.image} />
             <View style={styles.rightContainer}>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.title}>{getProgress()}{song.title}</Text>
+                    <Text style={styles.title}>{song.title}</Text>
                     <Text style={styles.artist}>{song.artist}</Text>
                 </View>
                 <View style={styles.iconContainer}>
@@ -81,6 +83,7 @@ const PlayerWidget = () => {
                         <FontAwesome name={isPlaying ? 'pause' : 'play'} size={30} color={"white"} />
                     </TouchableOpacity>
                 </View>
+            </View>
             </View>
         </View>
 
