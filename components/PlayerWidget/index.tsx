@@ -69,7 +69,7 @@ const PlayerWidget = () => {
 
     return (
         <View style={styles.container}>
-            <View style ={styles.progress}/>
+            <View style ={[styles.progress, {width: `${getProgress()}%`}]}/>
             <View style={styles.row}>
             <Image source={{ uri: song.imageUri }} style={styles.image} />
             <View style={styles.rightContainer}>

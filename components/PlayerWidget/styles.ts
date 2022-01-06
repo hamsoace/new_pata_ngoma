@@ -10,11 +10,9 @@ const styles = StyleSheet.create({
         width: '100%',
         borderWidth: 3,
         borderColor: 'black',
-        alignItems: 'center',
     },
     progress:{
-        height: 3,
-        width: '100%',
+        height: 8,
         backgroundColor: '#bcbcbc',
     },
     row:{
