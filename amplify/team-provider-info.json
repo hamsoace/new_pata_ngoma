@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-patangoma-dev-130616-authRole",
+      "UnauthRoleArn": "arn:aws:iam::586765612449:role/amplify-patangoma-dev-130616-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::586765612449:role/amplify-patangoma-dev-130616-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-patangoma-dev-130616-deployment",
+      "UnauthRoleName": "amplify-patangoma-dev-130616-unauthRole",
+      "StackName": "amplify-patangoma-dev-130616",
+      "StackId": "arn:aws:cloudformation:us-east-1:586765612449:stack/amplify-patangoma-dev-130616/790744a0-6fa1-11ec-b4d4-127e46446f9b",
+      "AmplifyAppId": "d2rqs8jxma6tuc"
+    }
+  }
+}
