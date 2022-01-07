@@ -6,13 +6,12 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom:45,
         backgroundColor: '#131313',
-        flexDirection: 'row',
         width: '100%',
-        borderWidth: 3,
+        borderWidth: 2,
         borderColor: 'black',
     },
     progress:{
-        height: 8,
+        height: 3,
         backgroundColor: '#bcbcbc',
     },
     row:{
