@@ -15,6 +15,7 @@ const song = {
     artist: 'Skillo',
 }
 
+
 const PlayerWidget = () => {
 
     const [sound, setSound] = useState<Sound | null>(null);
