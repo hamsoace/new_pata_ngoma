@@ -1,19 +1,43 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextInput, Image } from 'react-native';
+import { SearchBar } from 'react-native-screens';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import { Album } from '../types';
 
-export default function SearchScreen() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/SearchScreen.tsx" />
-    </View>
-  );
+
+export type AlbumProps = {
+  album: Album,
 }
 
+const SearchScreen = (props: AlbumProps) => {
+const fechSongs = () => {
+  
+}
+
+  return(
+    <View style={styles.container}>
+       <TextInput 
+       style={styles.textInputStyle}
+       value={search}
+       placeholder="Search Here"
+       underlineColorAndroid="transparent"
+       onChangeText={(text)=> searchFilter(text)} 
+       />
+     </View>
+  );
+} 
+
 const styles = StyleSheet.create({
+  textInputStyle:{
+    height: 30,
+    borderWidth: 1,
+    borderRadius: 1,
+    paddingLeft: 20,
+    margin: 5,
+    borderColor: '#009688',
+    backgroundColor: 'black'
+  },
   container: {
     flex: 1,
     alignItems: 'center',
@@ -29,3 +53,20 @@ const styles = StyleSheet.create({
     width: '80%',
   },
 });
+
+export default SearchScreen;
+// export default function SearchScreen() {
+//   return (
+//     <View style={styles.container}>
+//       <TextInput 
+//       style={styles.textInputStyle}
+//       value={search}
+//       placeholder="Search Here"
+//       underlineColorAndroid="transparent"
+//       onChangeText={(text)=> searchFilter(text)} 
+//       />
+//     </View>
+//   );
+// }
+
+
